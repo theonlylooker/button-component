@@ -2,10 +2,14 @@ import { ReactComponent as Logo } from "./assets/react.svg";
 import { Button } from "./components/button";
 const App = () => {
   return (
-    <div className="text-4xl">
-      <h1 className="text-xs text-lg text-3xl">text</h1>
+    <div>
+      <h1 className="w-24 h-11 shadow-">text</h1>
+      <h2 className="bg-defaultBG bg-opacity-10 text-blue-800">default</h2>
+      <h2 className="bg-dangerHoverBG ">hover</h2>
       <Logo />
-      <Button>asd</Button>
+      <Button size="md" StartIcon={Logo}>
+        Default
+      </Button>
     </div>
   );
 };
